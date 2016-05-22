@@ -1,0 +1,47 @@
+﻿
+<div class="row">
+    <div class="col-md-4 col-sm-4" id="sitemap">
+        <h2>Sitemap</h2>
+        <ul>
+            <li>@Html.ActionLink("Services", "Services", "Home", new { area = "" }, null)</li>
+            <li>@Html.ActionLink("API", "API", "Home", new { area = "" }, null)</li>
+            <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, null)</li>
+            <li>@Html.ActionLink("Documents", "Documents", "Home", new { area = "" }, null)</li>
+            @*<li>@Html.ActionLink("Chat", "Chat", "Home", new { area = "" }, null)</li>*@
+            <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, null)</li>
+        </ul>
+    </div>
+    <div class="col-md-4 col-sm-4" id="recentposts">
+        <h2>Recent Posts</h2>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="col-md-4" id="advertisement">
+
+        @*<h2>Advertisement</h2>
+            <div class="fb-ad" data-placementid="1513836568923136_1517333345240125" data-format="320x50" data-testmode="false"></div>
+            <div class="fb-ad" data-placementid="262986944044698_265801040429955" data-format="300x250" data-testmode="false"></div>*@
+        <div class="fb-ad" data-placementid="262986944044698_265801040429955" data-format="native" data-nativeadid="ad_root" data-testmode="false"></div>
+        <div id="ad_root">
+            <a class="fbAdLink">
+                <div class="fbAdMedia thirdPartyMediaClass"></div>
+                <div class="fbAdTitle thirdPartyTitleClass"></div>
+                <div class="fbAdBody thirdPartyBodyClass"></div>
+                <div class="fbAdCallToAction thirdPartyCallToActionClass"></div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <ul class="nav navbar-nav legal-jargon">
+            <li>@Html.ActionLink("Terms Of Service", "Tos", "Home")</li>
+            <li>@Html.ActionLink("Privacy Policy", "Privacy", "Home")</li>
+        </ul>
+
+        <p class="copyright">&copy; @DateTime.Now.Year - Romero Agency </p>
+    </div>
+</div>
